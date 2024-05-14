@@ -14,8 +14,8 @@
 # name = 12
 # print(name)
 
-# a = 10
-# b = 13 
+a = 10
+b = 13 
 # print(a,b)
 # temp = a 
 # a = b 
