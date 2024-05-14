@@ -33,12 +33,12 @@
 # print(f"your score is {score},your height is {height}\n your isw is {isw}")     #prints in same line without type conversion
 
 #exercise-how many days,week,month left to live
-# age = int(input("what is your age?"))
-# yrs = 90 - age
-# x = yrs*365
-# y = yrs*52
-# z = yrs*12
-# print(f"you have {x} days left,you have {y} months left, you have {z} week left ")
+age = int(input("what is your age?"))
+yrs = 90 - age
+x = yrs*365
+y = yrs*52
+z = yrs*12
+print(f"you have {x} days left,you have {y} months left, you have {z} week left ")
 
 #exercise- tip calculator
 
