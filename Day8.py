@@ -1,5 +1,8 @@
 import math
 import art_day08
+
+
+##functions
 # def greet(a):
 #     print(f"hello {a}")
 #     print(f" how are you {a}")
