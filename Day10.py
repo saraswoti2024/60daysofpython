@@ -86,34 +86,38 @@ def div(n1,n2):
 def mul(n1,n2):
  return n1*n2
 
-# def rem(n1,n2):
-#  return n1%n2
+def rem(n1,n2):
+ return n1%n2
 
-
+print(logo)
 dictionary = {
  "+" : add,
  "-" : sub,
  "*" : mul,
  "/" : div,
-#  "%" : "rem",
+ "%" : rem,
 }
 
 n1 = float(input("first number: "))
-op = input("op: ")
-n2 = float(input("Second number: "))
-operation = dictionary[op]
-answer = operation(n1=n1,n2=n2)
-new = print(f" {n1} {op} {n2} = {answer}")
+for i in dictionary:
+ print(i)
+isvalue=True
+while isvalue:
 
-# isvalue=True
-# while isvalue:
-ask = input("do you want to continue y or n?")
-if (ask=="y"):
-  n3 = answer
-  print(f"{new} + {op}")
-elif (ask=="n"):
-  isvalue=False
- 
+  op = input("op: ")
+  n2 = float(input("Second number: "))
+  operation = dictionary[op]
+  answer = operation(n1=n1,n2=n2)
+  print(f" {n1} {op} {n2} = {round(answer,3)}")
+
+  ask = input("do you want to continue y or n?")
+  if (ask=="y"):
+   n1 = answer    
+
+  elif (ask=="n"):
+    isvalue=False
+  
+
 
 
 
