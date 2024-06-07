@@ -71,13 +71,12 @@ while isvalue:
         while(attempt>0):
                 guess= int(input("Make a guess: "))
                 final = guessnumber(guess)
-                
                 print(f"you have {attempt} attempts to guess the number!")
                 print(f"{final}")
                 attempt= attempt-1
 
     print(f"correct answer is {number}")
-    os.system("cls")
+    print("--------------------------")
     play = input("Do you want to play again: type 'y' or 'n': ")
     if play=='y':
        isvalue=True
