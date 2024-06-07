@@ -34,7 +34,7 @@ def guessnumber(guess):
      return f"you won,{number} is the number"
     
     elif abs(number-guess)<10:
-     print("you're too close to winning")
+     return "you're too close to winning"
     
     elif(guess>(number)):
      return "too high"
@@ -48,19 +48,19 @@ while isvalue:
     print("Welcome to he Number Guessing Game!")
     print("I'm thinking of a number between 1 and 100: ")
     number = (random.randint(1,101))
+    print(f"correct answer is {number}")
 
     level = input("Choose a difficulty.Type 'easy' or 'hard': ").lower()
     if(level == "easy"):
         attempt = 10
         print(f"you have 10 attempts to guess the number!")
-        while(attempt+1>0):
+        while(attempt>0):
             guess= int(input("Make a guess: "))
             final = guessnumber(guess)
-            value=final
             print(f"you have {attempt} attempts to guess the number!")
             print(f"{final}")
-            if value==number):
-             os.system("cls")
+            if final == f"you won,{number} is the number":
+             break
             attempt= attempt-1
             
 
@@ -71,11 +71,13 @@ while isvalue:
         while(attempt>0):
                 guess= int(input("Make a guess: "))
                 final = guessnumber(guess)
+                
                 print(f"you have {attempt} attempts to guess the number!")
                 print(f"{final}")
                 attempt= attempt-1
 
     print(f"correct answer is {number}")
+    os.system("cls")
     play = input("Do you want to play again: type 'y' or 'n': ")
     if play=='y':
        isvalue=True
