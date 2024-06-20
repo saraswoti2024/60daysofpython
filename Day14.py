@@ -3,6 +3,7 @@
 import random 
 from game_dataday14 import data
 from logoday14 import logo
+
 import os
 
 def total(followera,followerb):
